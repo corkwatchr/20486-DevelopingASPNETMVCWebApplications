@@ -147,7 +147,7 @@ The main tasks for this exercise are as follows:
 #### Task 1: Complete the slideshow view and template view.
 
 1. Open the **SlideShow.cshtml** view file from the **Photo** folder.
-2. Within the **&lt;div id=&quot;slideshow-progress-bar-container&quot;&gt;** element, add a new **&lt;div&gt;** element with the ID **slide-show-progress-bar.**
+2. Within the **&lt;div id=&quot;slideshow-progress-bar-container&quot;&gt;** element, add a new **&lt;div&gt;** element with the ID **slideshow-progress-bar.**
 3. Add a **&lt;script&gt;** tag to the **Views/Shared/\_MainLayout.cshtml** view to link the view to jQuery UI. Ensure that the **&lt;script&gt;** tag appears after the other **&lt;script&gt;** tags in the **HEAD** element. Link the view to the following location: **http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.0/jquery-ui.min.js**
 4. Add a **&lt;link&gt;** tag to link to the jQuery UI style sheet by using the following information:
 
@@ -163,7 +163,7 @@ The main tasks for this exercise are as follows:
 2. Create a new function named **calculateIncrement** that takes no parameters.
 3. In the new function, create a new variable named **cardCount**. Use this variable to store the number of **&lt;div class=&quot;slide-show-card&quot;&gt;** elements within the **&lt;div id=&quot;slide-show&quot;&gt;** element.
 4. Divide 100 by the **cardCount** variable, and store the result in **percentIncrement**.
-5. Run the jQueryUI **progressbar()** function on the **&lt;div id=&quot;slidehow-progress-bar&quot;&gt;** element. Set the **value** to **100**.
+5. Run the jQueryUI **progressbar()** function on the **&lt;div id=&quot;slideshow-progress-bar&quot;&gt;** element. Set the **value** to **100**.
 6. Before the call to **setInterval()**, insert a call to the new **calculateIncrement()** function.
 7. At the beginning of the **slideSwitch()** function, add the value of **percentIncrement** to the value of **percentCurrent**.
 8. Add an **if** statement stating that if **percentCurrent** is more than **100**, set **percentCurrent** is to equal **percentIncrement**.
